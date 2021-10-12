@@ -1,0 +1,163 @@
+<!-- <html>
+  <body>
+<p>hello mphasis java batch to angular</p>
+<p> {{hi}},{{h}},{{hii}}
+<a>welcome to mphasis</a></p>
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>{{company}}</td>
+    <td>{{no}}</td>
+    <td>{{country}}</td>
+  </tr>
+ 
+</table>
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+    <th>email</th>
+    <th>dob</th>
+
+  </tr>
+  <tr>
+    <td>{{emp.company}}</td>
+    <td>{{emp.no}}</td>
+    <td>{{emp.country}}</td>
+    <td>{{emp.email}}</td>
+    <td>{{emp.dob|date:'longDate'}}</td>
+
+  </tr>
+</table>
+
+</body>
+ <div>
+  <button (click)="method()">click</button>
+
+</div> 
+</html> -->
+<!-- <html>
+  <body>
+  <input type="text" value={{emp.company}}>
+</body></html> -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img [src]="surya">
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>{{newvar}}</p>
+  <input [(ngModel)]="newvar">
+  <p>{{newvar}}</p>
+</body>
+</html>
+above code is for dual modification using imports -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul *ngFor="let suresh of emp">
+<li *ngIf="suresh.no>1000">{{suresh.company}}{{suresh.no}}{{suresh.country}}</li>
+  </ul>
+</body>
+</html>
+above code is to print all the object values in array element using for each and if  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul *ngFor="let suresh of emp" [ngSwitch]="suresh.company">
+    <li *ngSwitchCase="'mphasis'" class="reg">{{suresh.country}}</li>
+    <li *ngSwitchCase="'Mphasis'" class="reg1">{{suresh.country}}</li>
+  </ul>
+</body>
+</html>
+above code is switch -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div [ngClass]="['hello','hii']">hello world</div>
+</body>
+</html>
+this for ngClass -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table >
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Grand Slams</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+    <tr    *ngFor="let suresh of itemsDetails">
+      
+        <td> {{suresh.sno}} </td>
+        <td> {{suresh.name}} </td>
+        <td> {{suresh.country}} </td>
+        <td> {{suresh.grandslams}} </td>
+        <td> {{suresh.active}} </td>
+    </tr>
+</table>
+</body>
+</html>
+array object elements in table -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div [ngStyle]="{'background-color':'green'}">hello mphasis</div> 
+  <li *ngSwitchCase="'sandy'" class="one">{{person.company}}
+</body>
+</html>
+above code for switch case -->
